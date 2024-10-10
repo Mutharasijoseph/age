@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="age.css">
+</head>
+<body>
+    <script src="age.js"></script>
+    
+    <div class="container">
+    
+            <div class="base">
+                <h1>Age Calculator</h1><br>
+            </div>
+            <div class="block">
+                <p class="title">Date</p>
+                <input type="text" name="date" id="date" placeholder="dd" minlength="1" maxlength="2" required><br><br>
+            </div>
+            <div class="block">
+                <p class="title">Month</p>
+                <input type="text" name="month" id="month" placeholder="mm" minlength="1" maxlength="2" required><br><br>
+            </div>
+            <div class="block">
+                <p class="title">Year</p>
+                <input type="text" name="year" id="year" placeholder="yyyy" minlength="4" maxlength="4" required><br><br>
+            </div>
+            <div class="submit-button">
+                <input type="button" name="submit" value="submit" onclick="age()"/>
+            </div>
+            <h2 class="age" id="age" style="color: white;"></h2>
+    
+    </div>
+    
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="age.css">
+</head>
+<body>
+    <script src="age.js"></script>
+    
+    <div class="container">
+        <form onsubmit="age(); return false;">
+            <div class="base">
+                <h1>Age Calculator</h1><br>
+            </div>
+            <div class="block">
+                <p class="title">Date</p>
+                <input type="text" name="date" id="date" placeholder="dd" minlength="1" maxlength="2" required><br><br>
+            </div>
+            <div class="block">
+                <p class="title">Month</p>
+                <input type="text" name="month" id="month" placeholder="mm" minlength="1" maxlength="2" required><br><br>
+            </div>
+            <div class="block">
+                <p class="title">Year</p>
+                <input type="text" name="year" id="year" placeholder="yyyy" minlength="4" maxlength="4" required><br><br>
+            </div>
+            <input type="submit" value="Calculate Age">
+        </form>
+        <div id="age"></div>
+    </div>
+</body>
+</html>
